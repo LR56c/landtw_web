@@ -29,11 +29,38 @@ const Home: NextPage = () =>
               width={1920}
               height={1280}
             />
+            <div
+              className="absolute top-0 left-0 w-full h-full sm:bg-red-700 sm:bg-opacity-50"
+            />
           </div>
           <div
-            className="bg-gray-600 w-full h-64"
+            className="bg-gray-600 w-full h-96 flex flex-row justify-center items-center"
           >
-            a
+              <div
+                className="w-64 h-64 bg-white flex flex-col justify-center items-center"
+              >
+                <div
+                  className="w-16 relative basis-1/3 items-center"
+                >
+                  <Image
+                    src="/apple-gf0851a67a_1920.jpg"
+                    alt="Picture of the author"
+                    layout="responsive"
+                    objectFit="cover"
+                    width={50}
+                    height={50}
+                  />
+                </div>
+                <div>
+                  Section Title
+                </div>
+                <div>
+                  subtitulo
+                </div>
+                <div>
+                  description
+                </div>
+              </div>
           </div>
         </div>
       </main>
