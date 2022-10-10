@@ -1,6 +1,13 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
+import { MdAccountTree } from "react-icons/md";
+import { SectionTile } from "../components/SectionTile";
+import { BsBuilding, BsListCheck } from "react-icons/bs";
+import { MainBackground } from "../components/MainBackground";
+import { HeadingTile } from "../components/HeadingTile";
+import { HiLocationMarker, HiPencil } from "react-icons/hi";
+import { BiStoreAlt } from "react-icons/bi";
+import { MyForm } from "../components/MyForm";
 
 const Home: NextPage = () =>
 {
@@ -17,51 +24,55 @@ const Home: NextPage = () =>
           href="/favicon.ico"
         />
       </Head>
-      <main>
+      <main
+        className="bg-gray-700"
+      >
+        <MainBackground/>
         <div
+          className="bg-white w-full h-[52rem] sm:h-80 flex flex-col sm:flex-row justify-center
+          items-center sm:space-x-24 sm:px-4 sm:space-y-0 space-y-4"
         >
-          <div className="w-full relative">
-            <Image
-              src="/apple-gf0851a67a_1920.jpg"
-              alt="Picture of the author"
-              layout="responsive"
-              objectFit="cover"
-              width={1920}
-              height={1280}
-            />
-            <div
-              className="absolute top-0 left-0 w-full h-full sm:bg-red-700 sm:bg-opacity-50"
-            />
-          </div>
-          <div
-            className="bg-gray-600 w-full h-96 flex flex-row justify-center items-center"
-          >
-              <div
-                className="w-64 h-64 bg-white flex flex-col justify-center items-center"
-              >
-                <div
-                  className="w-16 relative basis-1/3 items-center"
-                >
-                  <Image
-                    src="/apple-gf0851a67a_1920.jpg"
-                    alt="Picture of the author"
-                    layout="responsive"
-                    objectFit="cover"
-                    width={50}
-                    height={50}
-                  />
-                </div>
-                <div>
-                  Section Title
-                </div>
-                <div>
-                  subtitulo
-                </div>
-                <div>
-                  description
-                </div>
-              </div>
-          </div>
+          <SectionTile
+            icon={ <MdAccountTree/> }
+          />
+          <SectionTile
+            icon={ <BsListCheck/> }
+          />
+          <SectionTile
+            icon={ <BsBuilding/> }
+          />
+        </div>
+        <div
+          className="w-full h-44 xxs:h-32 bg-red-500 flex flex-row justify-center
+          items-center text-white text-xl xxs:text-2xl xs:text-3xl text-center px-4"
+        >
+          Its the next generation of location based networking
+        </div>
+        <div
+          className="w-full h-32 flex flex-row justify-center items-center
+          text-white text-center text-4xl xxs:text-5xl xs:text-6xl px-2"
+        >
+          See how it works
+        </div>
+        <HeadingTile
+          icon={ <HiPencil/> }
+        />
+        <HeadingTile
+          icon={ <BiStoreAlt/> }
+          alternateBackground
+          alternatePosition
+        />
+        <HeadingTile
+          activeIconBackground={ false }
+          icon={ <HiLocationMarker
+            className="text-red-500 sm:text-2xl text-4xl"
+          /> }
+        />
+        <MyForm/>
+        <div
+          className="w-full h-12 bg-white flex flex-col justify-center items-center"
+        >
+          Made with ❤️
         </div>
       </main>
     </>
