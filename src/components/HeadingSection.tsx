@@ -42,7 +42,7 @@ export const HeadingSection: FC<HeadingSectionProps> = ( {
           Heading here
         </p>
         <p
-          className="text-white text-ellipsis sm:line-clamp-8 line-clamp-5"
+          className="text-white text-[11px] xxs:text-sm lg:text-base xxs:line-clamp-none line-clamp-11"
         >
           Secundus vigils ducunt ad tus.Est ferox agripeta, cesaris.Sunt byssuses imperium peritus, regius cursuses.Ubi est rusticus victrix?Eheu, fidelis impositio!Ecce, peritus historia!Fidess observare!Sunt toruses acquirere magnum, raptus finises.Cur lactea mori?Est barbatus sectam, cesaris.Domesticus, bassus eposs sed mire fallere de albus, regius contencio.Salvus ventuss ducunt ad lura.
         </p>

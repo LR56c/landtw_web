@@ -6,18 +6,20 @@ export const MainBackground: FC = () =>
 {
   return (
     <div
-      className="relative h-96 w-full sm:h-full"
+      className="relative xs:h-96 xxs:h-[30rem] h-[38rem] w-full sm:h-full"
     >
       <div
-        className="absolute z-0 h-full w-full bg-[url('/apple-gf0851a67a_1920.jpg')] bg-cover bg-center"
+        className="absolute z-0 h-full w-full bg-[url('/apple-gf0851a67a_1920.jpg')]
+        bg-cover bg-center"
       />
 
       <div
-        className="absolute z-10 h-full w-full bg-red-500 bg-opacity-50 bg-cover bg-center"
+        className="absolute z-10 h-full w-full bg-red-500 sm:bg-gray-500
+        sm:bg-opacity-50 bg-opacity-80 bg-cover bg-center"
       />
 
       <div
-        className="relative flex h-96 w-full flex-col space-y-4 sm:space-y-16 sm:h-full z-20"
+        className="relative z-20 flex h-96 w-full flex-col space-y-4 sm:space-y-16 sm:h-full"
       >
         <div
           className="flex w-full flex-col items-center justify-start space-y-2 sm:justify-center"
@@ -56,14 +58,14 @@ export const MainBackground: FC = () =>
             className="flex w-full flex-col items-center space-y-4 justify-start:center sm:basis-1/2 sm:items-start sm:justify-start sm:pb-16"
           >
             <div
-              className="text-center text-2xl font-bold text-white line-clamp-1 sm:text-start"
+              className="text-center text-2xl font-bold text-white sm:text-start"
             >
               Absolutios potus in virundum!
             </div>
             <p
-              className="text-center text-white line-clamp-4 sm:w-2/3 sm:text-start"
+              className="text-center text-white sm:w-2/3 sm:text-start xxs:line-clamp-none line-clamp-11"
             >
-              Congregabo aegre ducunt ad grandis idoleum.Cur adiurator nocere?Cur exemplar assimilant?Vae, gluten!Stella, valebat, et competition.Mineralis manducares, tanquam fortis cacula.Cum musa observare, omnes uriaes tractare dexter, altus aonideses.Planetas sunt diatrias de teres indictio.Tata grandis demolitione est.Humani generis, triticum, et vox.Glutens ire in brigantium!
+              Cur urbs favere? Sunt acipenseres resuscitabo regius, secundus assimilatioes. A falsis, navis festus lanista. Unda hic ducunt ad camerarius lapsus. Caniss sunt advenas de noster bulla. Mirabilis abactus foris contactuss victrix est. Est placidus abactor, cesaris.
             </p>
             <div
               className="flex w-full flex-row justify-center sm:justify-start"

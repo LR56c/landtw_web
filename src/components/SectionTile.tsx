@@ -33,17 +33,17 @@ export const SectionTile: FC<SectionTileProps> = ( {
         </div>
       </div>
       <div
-        className="text-ellipsis text-gray-800 text-2xl line-clamp-1"
+        className="text-ellipsis text-gray-800 text-2xl"
       >
         { title }
       </div>
       <div
-        className="my-2 text-ellipsis text-center text-sm text-gray-400 line-clamp-2"
+        className="my-2 text-ellipsis text-center text-sm text-gray-400"
       >
         { subtitle }
       </div>
       <div
-        className="text-ellipsis text-center text-gray-800 text-sm line-clamp-3"
+        className="text-ellipsis text-center text-gray-800 text-sm"
       >
         { description }
       </div>
