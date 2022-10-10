@@ -25,7 +25,7 @@ export const CustomIcon: FC<CustomIconProps> = ( {
         className={ `relative h-full w-full ${backgroundActive ? 'bg-gradient-to-r from-red-600 to-red-500' : ''} ${classNameContainer ?? ''}` }
       />
       <div
-        className={ `absolute flex flex-col items-center justify-center fill-current ${classNameIcon ?? ''}` }
+        className={ `absolute flex flex-col items-center text-white justify-center fill-current ${classNameIcon ?? ''}` }
       >
         { icon }
       </div>
