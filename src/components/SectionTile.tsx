@@ -3,9 +3,9 @@ import { MdAccountTree } from "react-icons/md";
 
 interface SectionTileProps
 {
-  title: string;
-  subtitle: string;
-  description: string;
+  title?: string;
+  subtitle?: string;
+  description?: string;
   icon: JSX.Element;
 }
 

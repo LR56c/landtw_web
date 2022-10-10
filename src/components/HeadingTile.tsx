@@ -4,9 +4,9 @@ import { HeadingSection } from "./HeadingSection";
 
 interface HeadingTileProps
 {
-  alternateBackground: boolean;
-  activeIconBackground: boolean;
-  alternatePosition: boolean;
+  alternateBackground?: boolean;
+  activeIconBackground?: boolean;
+  alternatePosition?: boolean;
   icon: JSX.Element;
 }
 
@@ -31,17 +31,19 @@ export const HeadingTile: FC<HeadingTileProps> = ( {
           />
           : <HeadingSection
             icon={ icon }
-            alternatePosition={ alternatePosition }
-            activeIconBackground={ activeIconBackground }
+            alternatePosition={ Boolean( alternatePosition ) }
+            activeIconBackground={ Boolean(activeIconBackground) }
+            classNameIcon=""
           /> }
         { alternatePosition
           ? <HeadingSection
-            activeIconBackground={ activeIconBackground }
+            activeIconBackground={ Boolean(activeIconBackground) }
             alternatePosition={ alternatePosition }
             icon={ icon }
+            classNameIcon=""
           />
           : <HeadingImage
-            alternatePosition={ alternatePosition }
+            alternatePosition={ Boolean(alternatePosition) }
           /> }
       </div>
     </div>
